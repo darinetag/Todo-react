@@ -1,11 +1,12 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
+
   box-sizing: border-box;
 }
 
 body {
-  background: #333;
-  color: hsl(200, 100%, 90%);
+  background: #d6b2cc;
+  color: hsl(201, 82%, 9%);
   max-width: 400px;
   padding: 1rem;
   margin: 0 auto;
@@ -23,19 +24,35 @@ body {
   gap: 0.1rem;
 }
 
-.btn {
-  background: hsl(200, 100%, 50%, 0.1);
-  border: 1px solid hsl(200, 100%, 50%);
-  color: hsl(200, 100%, 50%);
-  padding: 0.25em 0.5em;
-  border-radius: 0.25em;
+
+.button-56 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
   cursor: pointer;
-  outline: none;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.btn:hover,
-.btn:focus-visible {
-  background: hsl(200, 100%, 50%, 0.2);
+.button-56:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0.25em 0.75em;
+  }
 }
 
 .btn.btn-danger {
@@ -51,15 +68,22 @@ body {
 
 .new-item-form input {
   outline: none;
-  border: 1px solid hsl(200, 100%, 40%);
-  background: hsl(200, 100%, 30%);
-  border-radius: 0.25em;
-  padding: 0.25em 0.5em;
-  color: hsl(200, 100%, 90%);
+  border: 1px solid hsl(198, 100%, 2%);
+  background:hsl(196, 62%, 86%);
+  border: 3px solid;
+  color: #000;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  border-radius: 0.2em;
+  padding: 1em 0.5em;
 }
 
 .new-item-form input:focus {
   border: 1px solid hsl(200, 100%, 70%);
+  border: 3px solid;
+color: #000;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+  5px 5px 0px 0px;
 }
 
 .header {
@@ -76,7 +100,7 @@ body {
 }
 
 .list li:has(input:checked) label {
-  color: hsl(200, 20%, 40%);
+  color: #000;
 }
 
 .list {
@@ -99,7 +123,7 @@ body {
 }
 
 .list li:has(input:focus-visible) label {
-  outline: 1px solid hsl(200, 100%, 50%);
+  outline: 1px solid hsl(200, 28%, 73%);
 }
 
 .list li input {
@@ -116,7 +140,7 @@ body {
   display: block;
   width: 0.9rem;
   height: 0.9rem;
-  background: hsl(200, 100%, 90%);
+  background: #fff;
   border-radius: 0.25em;
   display: flex;
   justify-content: center;
@@ -124,17 +148,17 @@ body {
 }
 
 .list li label:hover::before {
-  background: hsl(200, 100%, 80%);
+  background: hsl(198, 88%, 7%);
 }
 
 .list li:has(input:checked) label::before {
   content: "✔";
-  background: hsl(200, 100%, 40%);
-  color: hsl(200, 100%, 90%);
+  background: hsl(200, 36%, 95%);
+  color: hsl(197, 75%, 78%);
   font-size: 0.75rem;
   font-weight: bold;
 }
 
 .list li:has(input:checked) label:hover::before {
-  background: hsl(200, 100%, 30%);
+  background: hsl(199, 90%, 4%);
 }
